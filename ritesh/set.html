@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Permission Settings</title>
+    <link rel="stylesheet" href="set.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="permission-container">
+        <h2><i class="fas fa-shield-alt"></i> Permission Settings</h2>
+        <ul class="permission-list">
+            <li>
+                <i class="fas fa-map-marker-alt"></i> Location Access
+                <label class="switch">
+                    <input type="checkbox" id="location-switch" onclick="togglePermission('location')">
+                    <span class="slider"></span>
+                </label>
+            </li>
+            <li>
+                <i class="fas fa-address-book"></i> Contacts Access
+                <label class="switch">
+                    <input type="checkbox" id="contacts-switch" onclick="togglePermission('contacts')">
+                    <span class="slider"></span>
+                </label>
+            </li>
+            <li>
+                <i class="fas fa-video"></i> Real-time Camera Access
+                <label class="switch">
+                    <input type="checkbox" id="camera-switch" onclick="togglePermission('camera')">
+                    <span class="slider"></span>
+                </label>
+            </li>
+            <li>
+                <i class="fas fa-microphone"></i> Voice Recording Access
+                <label class="switch">
+                    <input type="checkbox" id="microphone-switch" onclick="togglePermission('microphone')">
+                    <span class="slider"></span>
+                </label>
+            </li>
+            <li>
+                <i class="fas fa-route"></i> Safest Route Generation
+                <label class="switch">
+                    <input type="checkbox" id="route-switch" onclick="togglePermission('route')">
+                    <span class="slider"></span>
+                </label>
+            </li>
+            <li>
+                <i class="fas fa-moon"></i> Allow All After Night
+                <label class="switch">
+                    <input type="checkbox" id="night-switch" onclick="togglePermission('night')">
+                    <span class="slider"></span>
+                </label>
+            </li>
+            <li>
+                <i class="fas fa-user-shield"></i> Police Force Information Sharing
+                <label class="switch">
+                    <input type="checkbox" id="police-switch" onclick="togglePermission('police')">
+                    <span class="slider"></span>
+                </label>
+            </li>
+        </ul>
+    </div>
+
+    <script src="set.js"></script>
+</body>
+</html>

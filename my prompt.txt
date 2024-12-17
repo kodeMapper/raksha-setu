@@ -1,0 +1,17 @@
+we are building a women safty website cum app for a hackathon. i need you to assist us in this project. here are our ideas:
+
+1. telengana police lauched a service called T safe for women safty while traveling, but there were some loop holes in that, like they used local tower network for calling but in some areas where network is low or no network like forest areas then there is a problrm for connectivity. so we were wondering that if we could integrate satellite connectivity so that in these type of areas, the network wont lost.
+2. if the passenger sitting with you is talking in some language that you dont know and if he uses some foul words or planning to molest/kidnap/rape you in his language with other passenger then the app  will alert you about this (live translate what they are talking) app shpuld  suppoert many langauges.
+3.fake call support.: if the women feels uncomofrtable, so she can request for a fake call. then a fake call from a API will received and  she can speak with it fakely. so that other passengers will understand that she is in contanct with someone. then they might cancel thier evil plans.
+4. when the journey start, the women should switch on the app. the app will ask her that what services you want to activate for this journney? all the services shown and she will select them with toggle buttons. she can also save some specific / customize preset of those servies. now 
+5. when she activates the services, she would set a 4 digit password. now this password is required to her jouney. she will set her destination from the current location. right from there, her microphone, camera and location starts uploading live data on cloud. so even if her phone is broken, the data till that point will be saved on the cloud. and also her location is shared to the naerst police stations and home contacts from start. 
+6. if her phone is lost then other backup plan is "secure buddy" which is similar to airtag which can track her location using satelite. this airtag can hide in womens outfit.
+7. during the entire journey, she will recieve a pop up time to time (time should be costomizable according to the distance) from a api that "are you safe?" two buttons will be there "yes and no" if she press yes then she have to enter that 4 digit code for confiremation of idendtity. its ok. then api will stop for some time and after some time again the pop up should appper. 
+but if she clicks "no" then a aletrt is send to those police stations and they will locate you immidiately and approach you.
+also there will be an emergensy sos button that will do same thing as pressing "no" which she can press any time if she feels unsafe.
+8. a inbuilt feature in the app that will suggest the "safest" route for the journey. the route might be long, but should safe (humans, cameras , city area)
+
+"
+
+
+enhance this prompt to best

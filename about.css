@@ -1,0 +1,161 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #007bff; /* Blue */
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    color: #555;
+    font-size: 18px;
+}
+
+/* Mission Section */
+.mission-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.mission-image {
+    flex: 1;
+}
+
+.mission-image img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.mission-text {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.mission-text h2 {
+    color: #007bff; /* Blue */
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.mission-text p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Core Values Section */
+.values-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.values-section h2 {
+    color: #007bff; /* Blue */
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.values {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.value-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+    text-align: center;
+}
+
+.value-card i {
+    font-size: 48px;
+    color: #007bff; /* Blue */
+    margin-bottom: 15px;
+}
+
+.value-card h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.value-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Team Section */
+.team-section {
+    text-align: center;
+}
+
+.team-section h2 {
+    color: #007bff; /* Blue */
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 200px;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+}
+
+.team-card h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 14px;
+    color: #555;
+}

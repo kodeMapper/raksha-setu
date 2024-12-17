@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raksha-Setu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: 'Arial', sans-serif;
+            transition: background-color 0.5s, color 0.5s;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.5s ease-in-out;
+            background: linear-gradient(to right, #4b79a1, #283e51);
+            /* Default Gradient */
+        }
+
+        /* Dark Mode Navbar */
+        .navbar.dark-theme {
+            background: linear-gradient(to right, #434343, #000000);
+            /* Dark Gradient */
+        }
+
+        /* Navbar Brand Styling */
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        .navbar-brand img {
+            width: 50px;
+            margin-right: 10px;
+        }
+
+        /* Nav Links */
+        .nav-item a {
+            color: white;
+            font-weight: 500;
+            margin-right: 20px;
+            transition: color 0.3s;
+        }
+
+        /* Nav Links Hover Effect */
+        .nav-item a:hover {
+            color: #FFD700;
+        }
+
+        /* Dropdown Menu */
+        .dropdown-menu {
+            background-color: #4b79a1;
+            border: none;
+            border-radius: 0;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .dropdown-menu.dark-theme {
+            background-color: #434343;
+        }
+
+
+        /* Light/Dark Theme Toggle Button */
+        .theme-switch {
+            cursor: pointer;
+            color: white;
+            font-size: 1.2rem;
+            margin-right: 20px;
+            transition: transform 0.3s ease, color 0.3s ease;
+        }
+
+        .theme-switch:hover {
+            transform: rotate(180deg);
+        }
+
+        /* Button Styling */
+        .btn-new-journey {
+            background: linear-gradient(45deg, #FFD700, #FF9800);
+            color: white;
+            border: none;
+            transition: all 0.3s ease;
+        }
+
+        .btn-new-journey:hover {
+            background: linear-gradient(45deg, #FF9800, #FF5722);
+        }
+
+        /* Dark Mode Styling */
+        body.dark-theme {
+            background-color: #333;
+            color: white;
+        }
+
+        .navbar-dark {
+            background-color: #222;
+        }
+
+        /* Dropdown item hover for dark theme */
+        .dropdown-item.dark-theme:hover {
+            background-color: #FFD700;
+            color: #333;
+        }
+
+        /* Responsive content */
+        .container {
+            padding-top: 20px;
+            text-align: center;
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .btn-new-journey a {
+            color: black;
+        }
+
+        .nav-item a {
+            color: black;
+        }
+
+        .navbar-brand {
+            margin-top: -25px;
+            margin-bottom: -20px;
+            margin-left: 30px;
+        }
+
+        .navbar-brand img {
+            width: 120px;
+        }
+
+        /* Dropdown item hover in light mode */
+        .dropdown-item:hover {
+            background-color: #FFD700;
+            color: black !important;
+            /* Force the font color to black in light mode */
+        }
+
+        /* Dropdown item hover in dark mode */
+        .dark-theme .dropdown-item:hover {
+            background-color: #FFD700;
+            color: rgba(0, 0, 0, 0.8) !important;
+            /* Force the font color to white in dark mode */
+        }
+
+        .dark-theme .dropdown-item {
+            color: rgba(255, 255, 255, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <!-- New Journey Button -->
+                <li class="nav-item">
+                    <a class="btn btn-new-journey" href="#">New Journey</a>
+                </li>
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Profile</a>
+                        <a class="dropdown-item" href="#">Key Features</a>
+                        <a class="dropdown-item" href="#">Previous Journeys</a>
+                        <a class="dropdown-item" href="#">Settings</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="index.html" id="logoutButton">Logout</a>
+                    </div>
+                    <!-- About -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <!-- Contact -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                </li>
+                <!-- Light/Dark Theme Toggle -->
+                <li class="nav-item">
+                    <span class="theme-switch" id="themeSwitch">&#9728;</span>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Content Placeholder -->
+    <div class="container mt-4">
+        <h1>Welcome to Raksha-Setu Dashboard</h1>
+        <p>Explore the features for your safety.</p>
+    </div>
+
+        
+    <!-- Footer -->
+<footer class="footer-section bg-dark text-white">
+    <div class="container py-4">
+        <div class="d-flex justify-content-between align-items-center">
+            <!-- Logo Section -->
+            <div class="footer-logo-container">
+                <img src="logo.png" alt="Logo" class="footer-logo" />
+            </div>
+            <!-- Content Section -->
+            <div class="footer-content">
+                <div class="row">
+                    <!-- Helpline Section -->
+                    <div class="col-md-4">
+                        <h5>Emergency Helplines</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-phone-alt"></i> Police: <a href="tel:100" class="text-warning">100</a></li>
+                            <li><i class="fas fa-phone-alt"></i> Women Helpline: <a href="tel:1091" class="text-warning">1091</a></li>
+                            <li><i class="fas fa-phone-alt"></i> Women Safety Wing: <a href="tel:8712656858" class="text-warning">8712656858</a></li>
+                            <li><i class="fas fa-phone-alt"></i> Domestic Abuse Helpline: <a href="tel:181" class="text-warning">181</a></li>
+                        </ul>
+                        <button class="btn btn-danger mt-3" onclick="callEmergency()"><i class="fas fa-phone"></i> Quick Call</button>
+                    </div>
+
+                    <!-- Quick Help Links -->
+                    <div class="col-md-4">
+                        <h5>Get Help</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="text-warning"><i class="fas fa-map-marker-alt"></i> Get Help by Location</a></li>
+                            <li><a href="#" class="text-warning"><i class="fas fa-exclamation-circle"></i> Get Help by Issue</a></li>
+                            <li><a href="contact.html" class="text-warning"><i class="fas fa-envelope"></i> Contact Us</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Useful Links -->
+                    <div class="col-md-4">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.maharashtrapolice.gov.in" class="text-warning"><i class="fas fa-external-link-alt"></i> Maharashtra Police Website</a></li>
+                            <li><a href="https://www.maharashtra.gov.in" class="text-warning"><i class="fas fa-external-link-alt"></i> Maharashtra State Website</a></li>
+                            <li><a href="about.html" class="text-warning"><i class="fas fa-info-circle"></i> About Us</a></li>
+                            <li><a href="support.html" class="text-warning"><i class="fas fa-hands-helping"></i> Support Bharosa Society</a></li>
+                            <li><a href="careers.html" class="text-warning"><i class="fas fa-briefcase"></i> Careers</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Footer Bottom -->
+                <div class="footer-bottom mt-4 text-center">
+                    <p class="mb-0">&copy; 2024 Raksha-Setu. All rights reserved. Powered by Maharashtra Police.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        // Light/Dark Theme Toggle
+        const themeSwitch = document.getElementById('themeSwitch');
+        themeSwitch.addEventListener('click', function () {
+            document.body.classList.toggle('dark-theme');
+            document.querySelector('.navbar').classList.toggle('dark-theme');
+            document.querySelector('.dropdown-menu').classList.toggle('dark-theme');
+            themeSwitch.innerHTML = document.body.classList.contains('dark-theme') ? '&#9790;' : '&#9728;';
+        });
+
+        // Logout button redirection
+        const logoutButton = document.getElementById('logoutButton');
+        logoutButton.addEventListener('click', function () {
+            // Simulate redirection to the login page
+            window.location.href = "login.html"; // Make sure to create this login page
+        });
+    </script>
+
+</body>
+
+</html>

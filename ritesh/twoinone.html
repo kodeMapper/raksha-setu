@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Women's Safety Features</title>
+    <link rel="stylesheet" href="/ritesh/twoinone.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Women's Safety Features</h1>
+        
+        <div class="feature-row">
+            <!-- Fake Call Support -->
+            <div class="feature" id="fake-call-feature">
+                <h2>Fake Call Support</h2>
+                <button id="fake-call-btn" onclick="startFakeCall()">Initiate Fake Call</button>
+                <div id="fake-call-screen">
+                    <p id="fake-call-text">Dialing...</p>
+                    <button id="end-call-btn" onclick="endFakeCall()">End Call</button>
+                </div>
+            </div>
+
+            <!-- Secure Buddy Tag -->
+            <div class="feature" id="secure-buddy-feature">
+                <h2>Secure Buddy Tag</h2>
+                <p>Track your location with GPS and stay connected.</p>
+                <div class="buddy-details">
+                    <p><strong>Location:</strong> Enabled</p>
+                    <p><strong>Battery Status:</strong> <span id="battery-status">75%</span></p>
+                    <p><strong>Notifications:</strong> Active</p>
+                    <div class="battery-icon">
+                        <div class="battery-level" style="width: 75%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/ritesh/twoinone.js"></script>
+</body>
+</html>
